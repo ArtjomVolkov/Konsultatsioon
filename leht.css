@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+h3{
+    color:grey;
+    position: absolute;
+    top: 90%;
+    left: 33%;
+}
+.nimi{
+    color: red;
+}
+h1{
+    color:white;
+}
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: white;
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=text]{
+    margin-top: 2px;
+    display: inline-block; /*Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â½Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Âµ Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â±Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¢Ø¢Â¹Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â» Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â²Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¢Ø¢Â¹Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¹Ã¢â‚¬Ú©Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢ÂµØ·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â½Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â·Ø¢Â¦Ø£Â¢Ã¢â€šÂ¬Ã¢â€žÂ¢Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¹Ã¢â‚¬Ú©Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¢Ø¢Â¹Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â¼*/
+    box-sizing: border-box; /*Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â½Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Âµ Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â±Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¢Ø¢Â¹Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â» Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â²Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¢Ø¢Â¹Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¹Ã¢â‚¬Ú©Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢ÂµØ·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â½Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â·Ø¢Â¦Ø£Â¢Ã¢â€šÂ¬Ã¢â€žÂ¢Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¹Ã¢â‚¬Ú©Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â±Ø·Â£Ø¢Â¢Ø£Â¢Ã¢â‚¬Ú‘Ø¢Â¬Ø·Â¢Ø¢Â¹Ø·Â·Ø¢Â·Ø·Â¢Ø¢Â°Ø·Â·Ø¢Â¢Ø·Â¢Ø¢Â¼*/
+    border: 1px solid #cc3912;
+    border-radius: 4px;
+    text-align: center;
+    height: 30px;
+    margin-bottom: 2px;
+}
+input[type=number]{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 4px;
+}
+.textarea{
+    position: relative;
+    top: 70px;
+    padding: 12px;
+
+    resize: none;
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: #4b1d3f;
+    border: none;
+    color: #FFFFFF;
+    margin: 0px;
+    font-size: 1.1rem;
+}
+.box select {
+    background-color: #7b0e31;
+    color: white;
+    padding: 12px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.box select option {
+    padding: 30px;
+}
+input[type=number] {
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0 8px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    cursor:pointer;
+    display:block;
+    width:8px;
+    color: #333;
+    text-align:center;
+    position:relative;
+}
+input[type=number]:hover::-webkit-inner-spin-button {
+    background: #eee url('http://i.stack.imgur.com/YYySO.png') no-repeat 50% 50%;
+    width: 14px;
+    height: 14px;
+    padding: 4px;
+    position: relative;
+    right: 4px;
+    border-radius: 28px;
+}
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
